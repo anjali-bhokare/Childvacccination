@@ -1,0 +1,207 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="User.master.cs" Inherits="User_User" %>
+
+&nbsp;
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            
+        }
+        .auto-style5 {
+            font-size: xx-large;
+        }
+        .auto-style6 {
+            font-size: large;
+        }
+        .auto-style8 {
+            height: 49px;
+        }
+        .auto-style9 {
+            text-align: center;
+        }
+        .auto-style10 {
+            font-size: large;
+            height: 221px;
+            width: 331px;
+        }
+        .auto-style11 {
+            text-decoration: none;
+        }
+        .auto-style12 {
+            height: 38px;
+            text-align: center;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table class="auto-style1" cellpadding="0" cellspacing="0" style="border: thin solid #C0C0C0; font-family: 'Microsoft YaHei'">
+        <tr>
+            <td>
+                <table class="auto-style1">
+                    <tr>
+                        <td colspan="3">
+                            <marquee scroll view="15" behavior="alternate" </marquee> Track. Book. Protect. Your childs vaccine journey starts here!&nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:ImageButton ID="ImageButton2" runat="server" Height="73px" ImageUrl="~/Images/logoff.png" Width="84px" />
+                        </td>
+                        <td class="auto-style5" style="font-weight: 700; text-align: left">Child Vaccination&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </td>
+                        <td>
+                            <table style="border: thin solid #C0C0C0;border-radius:10px;" >
+                                <tr>
+                                    <td style="text-align: center" class="auto-style8">
+                                        <asp:TextBox ID="txtsearch" runat="server" BorderStyle="None" BorderWidth="0px" Height="40px" Width="350px" placeholder="Enter City/Hospital/Vaccine " style="text-align: center"></asp:TextBox>
+                                    </td>
+                                    <td class="auto-style8">
+                                        <asp:ImageButton ID="ImageButton4" runat="server" Height="45px" ImageAlign="Middle" ImageUrl="~/Images/search1.png" Width="45px" OnClick="ImageButton4_Click" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table cellpadding="3">
+                                <tr>
+                                    <td>
+                                        <asp:ImageButton ID="ImageButton5" runat="server" Height="30px" ImageAlign="Middle" ImageUrl="~/Images/login.png" />
+                                    </td>
+                                    <td>
+                                        <asp:HyperLink ID="HyperLink1" runat="server"  NavigateUrl="~/User/Login.aspx" >Login</asp:HyperLink>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left" class="auto-style9">
+                <asp:Menu ID="Menu2" runat="server" Height="30px" Orientation="Horizontal" RenderingMode="Table" Width="100%"  BackColor="#006699" ForeColor="White">
+                    <Items>
+                        <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/User/Home.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="About Vaccine" Value="About Vaccine" NavigateUrl="~/User/AboutVaccination.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Vaccine Calender" Value="Vaccine Calender" NavigateUrl="~/User/calender.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Book Home Vaccine" Value="Book Home Vaccine" NavigateUrl="~/User/Bookhome.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Vaccine Center" Value="Vaccine Center" NavigateUrl="~/User/SearchVaccine.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Enquiry" Value="Enquiry" NavigateUrl="~/User/Enquiry.aspx"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table align="center" class="auto-style1" cellpadding="20" style="background-color: #3C87C8; color: #FFFFFF">
+                    <tr>
+                        <td class="" style="background-color: #3C87C8;">
+                            <div class="auto-style9">
+                                <strong><span class="auto-style6">Child Vaccination Website:</span></div>
+                            <hr />
+                            </strong><span class=""><br />
+&nbsp;We are committed to safeguarding children&#39;s health through timely and reliable vaccination services.
+                          
+                            Our mission is to provide accessible, accurate, and up-to-date immunization support to parents and caregivers.
+                          
+                            Backed by certified healthcare professionals and government guidelines, we ensure every child gets the protection&nbsp;they&nbsp;deserve.</span></td>
+                        <td class="" style="background-color: #3C87C8;"> &nbsp;</td>
+                        <td  style="background-color: #3C87C8;">
+                            <table align="center" cellpadding="5" cellspacing="1" class="auto-style1" style="color: #FFFFFF">
+                                <tr>
+                                    <td class="auto-style6">
+                                        <div class="auto-style9">
+                                            <strong>programs:</div>
+                                        <hr />
+                                        </strong></td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style9">
+                                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/User/Home.aspx" ForeColor="White" Style="text-decoration:none;">Home</asp:HyperLink>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style9">
+                                        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/User/AboutVaccination.aspx" ForeColor="White" Width="250px" CssClass="auto-style11">About Vaccination</asp:HyperLink>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style9">
+                                        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/User/calender.aspx" ForeColor="White" CssClass="auto-style11">Vaccine  Schedule</asp:HyperLink>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style12">
+                                        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/User/SearchVaccine.aspx" ForeColor="White" CssClass="auto-style11">Vaccine Center</asp:HyperLink>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="background-color: #3C87C8;">
+                            <table class="auto-style1" cellpadding="5" cellspacing="1">
+                                <tr>
+                                    <td class="auto-style6" style="color: #FFFFFF" >
+                                        <div class="auto-style9">
+                                            <strong>Quick Links:</div>
+                                        <hr />
+                                        </strong></td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #FFFFFF" class="auto-style9">
+                                        <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/User/Login.aspx" ForeColor="White" CssClass="auto-style11">Parent Login</asp:HyperLink>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #FFFFFF" class="auto-style9">
+                                        <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/Parent/feedback.aspx" ForeColor="White" CssClass="auto-style11">Feedback</asp:HyperLink>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style12" style="color: #FFFFFF">
+                                        <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/User/Enquiry.aspx" ForeColor="White" CssClass="auto-style11">Enquiry</asp:HyperLink>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #FFFFFF" class="auto-style9">
+                                        <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/Parent/BookVaccine.aspx" ForeColor="White" Width="200px" CssClass="auto-style11">Appointment</asp:HyperLink>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <div class="auto-style9">
+                                &nbsp;<span class="auto-style6"><strong>For More Information Visit!</div>
+                            <hr />
+                                        </strong></span> <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.8930412540885!2d74.4655090784572!3d16.68223494306583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc0e26e0a8944ed%3A0x2abc23be634e333f!2sDKTE%20Society&#39;s%20Textile%20%26%20Engineering%20Institute%20(An%20Empowered%20Autonomous%20Institute)!5e0!3m2!1sen!2sin!4v1756577822828!5m2!1sen!2sin"
+            width="300"
+            height="200"
+            style="border:0; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.2);"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+                            </tr>
+                            
+                </table>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
