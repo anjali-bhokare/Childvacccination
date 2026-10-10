@@ -49,7 +49,7 @@ By combining technology with preventive healthcare, the application aims to enco
 - **Database:** Microsoft SQL Server
 - **IDE:** Visual Studio
 
-*Make sure these technologies match your actual implementation.*
+
 
 ---
 
